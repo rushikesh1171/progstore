@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.name{
+    font-family: 'Sedgwick Ave', cursive;
+    margin: auto 70px;
+    font-size: 35px;
+    color: midnightblue;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon{
+    width: 25px;
+    cursor: pointer;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+    color: #ff5ea2;
+    text-decoration-color: #fff;
+}
+
+.row-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1 h2{
+    font-size: 54px;
+}
+
+.col-1 h3{
+    font-size: 35px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+
+.col-1 p{
+    font-size: 16px;
+    color: #ff0000;
+    font-weight: 100;
+}
+
+.line-through{
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    color: rgb(77, 77, 77);
+}
+
+.col-1 h4{
+    margin: 30px 0;
+    font-size: 20px;
+}
+
+.btn{
+    display: inline-flex;
+    width: 140px;
+    border: 0;
+    padding: 10px 12px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    transition: width 0.5s;
+}
+
+.btn-1{
+    padding-right: 12px;
+}
+.btn img{
+    width: 30px;
+    display: none;
+}
+
+.btn:hover img{
+    display: block;
+}
+
+.btn:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(#5dff46, #60daff);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.col-2 .controller{
+    width: 90%;
+}
+
+.color-box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(#5dff46, #60daff);
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+    transform: translateX(150px);
+}
+
+.add-btn{
+    text-align: center;
+    color:#fff;
+    cursor: pointer;
+}
+
+.add-btn img{
+    width: 35px;
+    margin-bottom: 5px;
+}
+
+.follow{
+    text-align: center;
+    margin-top: 23px;
+}
+
+.social-links{
+    text-align: center;
+}
+
+.social-links img{
+    height: 40px;
+    margin: 20px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.addcart{
+    margin-top: 12px;
+}
+
+.bulk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bulk h1{
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+
+.form-group{
+    text-align: center;
+}
+
+.form-group input {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    display: block;
+    width: 300px;
+    padding: 1px;
+    border: 2px solid black;
+    margin: 15px auto;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+form{
+    background-color: #06eca014;
+    padding-top: 25px;
+    padding-bottom: 1px;
+    margin: 30px 260px;
+}
+
+.form-sub{
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    background: black;
+    border-radius: 30px;
+    color: white;
+    padding: 12px 40px;
+}
+
+.form-sub:hover{
+    cursor: pointer;
+}
+
+.more-items{
+    background: url(img/yellow.jpg);
+    height: 700px;
+    margin: 0 25px;
+    background-size: cover;
+    border-left: 15px solid;
+    border-right: 15px solid;
+    border-color: lavenderblush;
+    /* display: block; */
+}
+
+.more-head{
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.more-head h1{
+    color: darkblue;
+}
+
+.row{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 75px 800px;
+}
+
+.card-left{
+    margin: 0 100px;
+}
+
+.card-left img {
+    width: 319px;
+    height: 200px;
+    border: 2px solid aquamarine;
+    cursor: pointer;
+}
+
+.card-right img {
+    width: 319px;
+    height: 200px;
+    border: 2px solid aquamarine;
+    cursor: pointer;
+}
+
+.card-body{
+    width: 300px;
+    border: 2px solid aquamarine;
+    color: white;
+    background: darkcyan;
+    padding: 15px 10px;
+    cursor: pointer;
+}
